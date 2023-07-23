@@ -1,0 +1,25 @@
+name: Test formatting and Clippy
+
+on: push
+
+permissions:
+    contents: read
+
+env:
+  RUSTFLAGS: "-Dwarnings"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Set up Rust
+              uses: actions-rs/toolchain@v1
+              with:
+                  toolchain: stable
+                  override: true
+                  components: rustfmt
+            - name: Test formatting
+              run: cargo fmt --all -- --check
+            - name: Run Clippy
+              run: cargo clippy --all-targets --all-features
