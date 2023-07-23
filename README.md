@@ -1,7 +1,7 @@
 # Overload functions (overfn)
 
 This crate allows you to overload functions with the same name but with different number of arguments through the
-[`overload`](https://docs.rs/overfn/latest/overfn/macro.overload.html) macro. After overloading all the functions, you 
+[`overload`](https://docs.rs/overfn/latest/overfn/attr.overload.html) macro. After overloading all the functions, you 
 need to use the [`macros!()`](https://docs.rs/overfn/latest/overfn/macro.macros.html) to genarate the macros to invoke 
 the overloaded functions.
 
