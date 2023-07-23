@@ -1,6 +1,6 @@
 [package]
 name = "overfn"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Ferran Sanchez Llado"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/ferranSanchezLlado/overfn.git"
@@ -8,7 +8,7 @@ homepage = "https://github.com/ferranSanchezLlado/overfn.git"
 documentation = "https://docs.rs/overfn"
 description = "Simple overloading system for functions with different arguments"
 keywords = ["Overloading", "Function", "Variable", "Arguments", "Variadic"]
-categories = ["Development Tools"]
+categories = ["development-tools"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
